@@ -10,9 +10,13 @@ end
 
 p result
 
-res = Hash.new([])
+res = Hash.new{|hash,key| hash[key]=[] }
 sentence.split(" ").each_with_index do |word,index|
-  result[word]<<index
+  res[word]<<index
 end
 
 p res
+
+p Hash.new==Hash.new([])
+p Hash.new([])=={}
+#p {}==Hash.new([])  no result

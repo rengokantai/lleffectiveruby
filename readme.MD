@@ -20,3 +20,13 @@ Or use
 ```
 Hash.new{|k,v|...}
 ```
+
+######4 hash.fetch
+using hash.fetch raises an exception if the key is missing
+```
+hash.fetch(k,default)
+```
+Or
+```
+hash.fetch{|k|,..}
+```
