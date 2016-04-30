@@ -30,3 +30,7 @@ Or
 ```
 hash.fetch{|k|,..}
 ```
+install fetchable
+```
+gem install fetchable
+```
