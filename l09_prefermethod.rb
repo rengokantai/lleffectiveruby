@@ -4,7 +4,11 @@ class L09_prefermethod
   end
 
   def valid?
-    @arr.any? {|x|x==1}
+    arr.any? {|x|x==1}
+  end
+  private
+  def arr
+    @arr || []
   end
 end
 
