@@ -1,3 +1,9 @@
+class EmailMatcher
+  def ===(other)
+    other.split("@").count==2 &&other.split("@").last.include?(".")
+  end
+end
+
 class L11_validateemail
   def initialize(email)
     @email=email
@@ -12,7 +18,7 @@ class L11_validateemail
   attr_reader :email
 
   def matcher
-    /.*@.*.co/
+    EmailMatcher.new
   end
 end
 
