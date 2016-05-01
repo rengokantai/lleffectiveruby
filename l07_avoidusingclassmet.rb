@@ -1,0 +1,2 @@
+class L07_avoidusingclassmet
+end

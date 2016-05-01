@@ -34,3 +34,6 @@ install fetchable
 ```
 gem install fetchable
 ```
+
+######6 avoid using var
+count as global mutable data
